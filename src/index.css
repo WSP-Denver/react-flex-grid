@@ -1,5 +1,5 @@
 body {
-  font: 16px "Century Gothic", Futura, sans-serif;
+  font: 16px "Century Gothic", "Futura", sans-serif;
   margin: 0;
   color: #9e9e9e;
 }
@@ -15,6 +15,15 @@ ol, ul {
 }
 .clearfix {
     *zoom: 1;
+}
+h2, h3, h4, h5 {
+  display: block;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+p {
+  margin: 0 0 8px 0;
+  line-height: 1.4;
 }
 /********************/
 button {
@@ -46,7 +55,7 @@ ul, ol {
 }
 ul li, ol li {
   display: inline;
-  padding: 0 8px;
+  padding: 0;
   margin: 0;
 }
 li a {
@@ -60,9 +69,9 @@ p {
 }
 .navbar {
   display: block;
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1280px;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
 }
 .main-nav li {
   padding: 0;
@@ -74,6 +83,20 @@ p {
 .main-nav li a:hover {
   background: #cacaca;
   color: #fff;
+}
+.two-three-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .content {
   -webkit-box-flex: 0;
@@ -111,7 +134,7 @@ aside h3 {
   padding: 0 0 12px 0;
 }
 .aside-section ul li span {
-  display: block;
+  display: inline-block;
   font-weight: normal;
   font-style: italic;
 }
@@ -137,9 +160,38 @@ aside h3 {
           justify-content: flex-start;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 2rem auto;
   padding: 0;
   max-width: 1280px;
+}
+footer {
+  display: block;
+  margin: 4rem 0 0 0;
+  padding: 0;
+  min-height: 10rem;
+  background: rgb(117, 97, 107);
+}
+.footer-inner {
+  position: relative;
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 80%;
+  max-width: 1280px;
+  color: #fff;
+}
+.footer-inner p {
+  color: #fff;
+  font-weight: normal;
+  text-transform: none;
+}
+.footer-inner p a {
+  display: inline-block;
+  color: #ffae5b;
+  text-decoration: none;
+}
+.footer-inner p a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 @media all and (max-width: 599px) {
   .flex-container {

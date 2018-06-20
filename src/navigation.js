@@ -4,16 +4,17 @@ class Navigation extends Component {
   render() {
     var navStyles = {
       display: "inline-block",
-      float: "right"
+      float: "right",
+      paddingRight: "10%"
     };
     return (
       <nav className="main-nav" style={navStyles} >
         <ul>
           <li>
-            <a href="/" >Home</a>
+            <a href="#top" >Home</a>
           </li>
           <li>
-            <a href="" >Item Two</a>
+            <a href="#trees" >Trees</a>
           </li>
           <li>
             <a href="" >Item Three</a>

@@ -5,13 +5,19 @@ class CardGrid extends Component {
     return (
       <div className="content" >
         <div className="flex-container" >
-          <Card color="#ffe4e4" title="salmon" />
-          <Card color="#ffae5b" title="orange sherbert" />
-          <Card color="#eee4e4" title="eggshell" />
-          <Card color="#d0bdd4" title="lavender" />
-          <Card color="#cde4e4" title="ocean" />
-          <Card color="#dae4e4" title="sea breeze" />
-          <Card color="#5ddfff" title="palapa" />
+            <Card color="#ffe4e4" title="salmon" />
+            <Card color="#ffae5b" title="orange sherbert" />
+            <Card color="#eee4e4" title="eggshell" />
+            <Card color="#d0bdd4" title="lavender" />
+            <Card color="#cde4e4" title="ocean" />
+            <Card color="#dae4e4" title="sea breeze" />
+            <Card color="#5ddfff" title="palapa" />
+            <Card color="#8efedd" title="80's kid" />
+            <Card color="#dfecdc" title="moss" />
+            <Card color="#feffc1" title="lemon custard" />
+            <Card color="#f1c497" title="adobe" />
+            <Card color="#ff5c5c" title="cherry slushy" />
+            <Card color="#a4ffab" title="neon green" />
         </div>
       </div>
     );
@@ -24,9 +30,6 @@ class Square extends Component {
       width: "100%",
       height: 150,
       background: this.props.color
-      // backgroundRepeat: "no-repeat",
-      // backgroundPosition: "center",
-      // backgroundSize: "cover"
     };
     return (
       <div style={squareStyle} ></div>
