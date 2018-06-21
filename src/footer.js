@@ -41,7 +41,7 @@ class Footer extends Component {
 						</li>
 					</ul>
 				</div>
-				{/* <a href="#top" className="elevator-button" style={elevatorBtnStyles} >Top</a> */}
+				<a href="#top" className="elevator-button" style={elevatorBtnStyles} >Top</a>
 			</footer>
 		);
 	}
