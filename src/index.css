@@ -193,6 +193,9 @@ footer {
   color: #fff;
   text-decoration: underline;
 }
+.elevator-button:after {
+
+}
 @media all and (max-width: 599px) {
   .flex-container {
     -webkit-box-pack: justify;
